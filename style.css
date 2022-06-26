@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-light-secondary);
+    background: var(--bg-dark-primary);
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+    background: var(--bg-light-primary);
+}
+
+::-webkit-scrollbar-thumb {
+    width: 20px;
+    height: 100px;
+    border-radius: 4px;
+    background: var(--primary);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary: #FF7300;
+    --primary-hover: #8C3EFF;
+    --primary-clicked: #C8A4FF;
+    --secondary: #FCA7E4;
+    --secondary-hover: #FA65D0;
+    --secondary-clicked: #FEE9F8;
+    --green: #62D26F;
+    --yellow: #FFDD2B;
+    --orange: #FD612C;
+    --blue: #7A71F6;
+    --red: #E8384F;
+    --text-dark-primary: #151918;
+    --text-dark-secondary: #00002D;
+    --text-light-primary: #D9D9D9;
+    --text-light-secondary: #d7dddc;
+    --grey-primary: #8d9f9b;
+    --grey-light: #a9b6b3;
+    --grey-dark: #4b5956;
+    --bg-dark-primary: #010117;
+    --bg-dark-secondary: #19003e;
+    --bg-light-primary: #fbf9ff;
+    --bg-light-secondary: #f1e8ff;
+
+    --shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+
+}
+
+#leftMenu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: var(--primary);
+    color: var(--text-light-primary);
+    overflow-x: hidden;
+    transition: 0.5s ease-in-out;
+    padding-top: 60px;
+}
+
+.mainNav {
+    margin-top: 40px;
+}
+
+.mainNav a {
+    margin-bottom: 15px;
+    text-decoration: none;
+}
+
+.home,
+.caseStudy,
+.designSystem,
+.competitors,
+.questionnaire,
+.demoOne,
+.demoTwo,
+.downloadOne,
+.downloadTwo {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.box {
+    background: var(--bg-dark-secondary);
+    padding: 2rem;
+    width: 70vw;
+    height: 40vh;
+    border-radius: 8px;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 65%;
+}
+
+.home h1,
+.caseStudy h1,
+.designSystem h1,
+.competitors h1,
+.questionnaire h1,
+.demoOne h1,
+.demoTwo h1,
+.downloadOne h1,
+.downloadTwo h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    line-height: 1.9;
+}
+
+.home p,
+.caseStudy p,
+.designSystem p,
+.competitors p,
+.questionnaire p,
+.demoOne p,
+.demoTwo p,
+.downloadOne p,
+.downloadTwo p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+
+.home {
+    background-image: url(https://fancycrave.com/wp-content/uploads/2017/05/free-stock-images-for-commercial-use.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    color: var(--text-light-primary);
+}
+
+.home p {
+    color: var(--text-light-secondary);
+}
+
+.home::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
+
+form {
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+.btn-primary {
+    color: var(--text-light-primary);
+    background: var(--primary);
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.7rem 3rem 0.7rem 3rem;
+    cursor: pointer;
+    box-shadow: var(--shadow);
+
+}
+
+#leftMenu a {
+    padding: 8px 8px 8px 10px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: var(--bg-dark-secondary);
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 0 50px 50px 0;
+}
+
+#leftMenu a:hover {
+    color: var(--primary);
+    background: var(--bg-light-primary);
+}
+
+#leftMenu a.btn-area {
+    border-radius: 8px;
+}
+
+#leftMenu .btn-area {
+    position: absolute;
+    top: 5px;
+    right: 1rem;
+    font-size: 2rem;
+    padding: 0.2rem 1rem 0.2rem 1rem;
+}
+
+span {
+    position: fixed;
+    right: 90px;
+    top: 30px;
+    font-size: 2rem;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    z-index: 5;
+    color: var(--primary);
+    font-weight: 700;
+}
+
+
+@media (max-width: 767px) {
+    span {
+        right: 15px;
+        top: 20px;
+        font-size: 1.4rem;
+    }
+
+    .home h1,
+    .caseStudy h1,
+    .designSystem h1,
+    .competitors h1,
+    .questionnaire h1,
+    .demoOne h1,
+    .demoTwo h1,
+    .downloadOne h1,
+    .downloadTwo h1 {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 2rem;
+        line-height: 1.9;
+    }
+
+    .home p,
+    .caseStudy p,
+    .designSystem p,
+    .competitors p,
+    .questionnaire p,
+    .demoOne p,
+    .demoTwo p,
+    .downloadOne p,
+    .downloadTwo p {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+        line-height: 1.5;
+    }
+
+    mainNav{
+        margin-top: 1.2rem;
+    }
+}

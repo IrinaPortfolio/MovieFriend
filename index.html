@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAV -->
+    <div id="leftMenu">
+        <a href="javascript:void(0)" class="btn-area" onclick="closeBtn()">&times;</a>
+        <div class="mainNav">
+            <a href="#">Начало</a>
+            <a href="#caseStudy">Казус</a>
+            <a href="#designSystem">Дизайн система</a>
+            <a href="#competitors">Анализ на конкуренцията</a>
+            <a href="#questionnaire">Анкета</a>
+            <a href="#demoOne">Демо: Сайт</a>
+            <a href="#demoTwo">Демо: Админ панел</a>
+            <a href="#downloadOne">Свалете диазйн системата</a>
+            <a href="#downloadTwo">Вижте кода на проекта</a>
+        </div>
+    </div>
+    <span onclick="openBtn()">Меню &#9776;</span>
+
+    <!-- CONTENT -->
+
+    <div class="home">
+        <div class="box">
+            <h1 style="color: #FF7300;"> MovieFriend</h1><br> <br>
+            <p>Тук можете да намерите цялата информация за проекта.</p>           
+        </div>
+    </div>
+
+    <div id="caseStudy" class="caseStudy">
+        <div class="box">
+            <h1>Казус</h1>
+            <p>Съдържа основната идея на разработката. Дефинира насоката на мислене, използваните инструменти, основните елементи и обобщава резултатите.</p>
+            <form action="https://uxfol.io/902eae4d" method="get" target="_blank">
+                <button class="btn btn-primary" type="submit">Към UXFolio</button>
+             </form>
+        </div>
+    </div>
+
+    <div id="designSystem" class="designSystem">
+        <div class="box">
+            <h1>Дизайн система</h1>
+            <p>Разработена във Фигма. Съдържа анализа на конкуренцията, атомите, молекулите, организмите и темплейтите на проекта</p>
+            <form action="https://www.figma.com/file/D4bVPv0GlcoafpolMYbOT7/UX-exam-design-system?node-id=0%3A1" method="get" target="_blank">
+                <button class="btn btn-primary" type="submit" >Към Figma</button>
+             </form>
+        </div>
+    </div>
+
+    <div id="competitors" class="competitors">
+        <div class="box">
+            <h1>Анализ на конкуренцията</h1>
+            <p>Сайт с подробна информация за конкурентите, включително анализ на функционалностите на техните страници.</p>
+            <form action="https://irinauxui.github.io/01-Competitive-Landscape/" method="get" target="_blank">
+                <button class="btn btn-primary" type="submit" >Към анализа</button>
+             </form>
+        </div>
+    </div>
+
+    <div id="questionnaire" class="questionnaire">
+        <div class="box">
+            <h1>Анкета</h1>
+            <p>Допитване до 23 човека, събиращо информация за демография, навици и какво очакват да видят като функционалности в платформа за обсъждане на филми.</p>
+            <form action="https://irinauxui.github.io/02-Questionnaire/" method="get" target="_blank">
+                <button class="btn btn-primary" type="submit" >Към анкетата</button>
+             </form>
+        </div>
+    </div>
+
+
+    <div id="demoOne" class="demoOne">
+        <div class="box">
+            <h1>Демо: Сайт</h1>
+            <p>Това е примерна визия на сайт, подходящ за проекта. Разработен е изцяло на база на дизайн системата.</p>
+            <form action="https://irinauxui.github.io/Exam-Website/" method="get" target="_blank">
+                <button class="btn btn-primary" type="submit">Към сайта</button>
+             </form>
+        </div>
+    </div>
+
+
+    <div id="demoTwo" class="demoTwo">
+        <div class="box">
+            <h1>Демо: Админ панел</h1>
+            <p>Примерна визия на това как може да изглежда администраторският панел на платформата.</p>
+            <form action="https://irinauxui.github.io/Exam-Responsive-Admin-Dashboard-With-Chart/" method="get" target="_blank">
+                <button class="btn btn-primary" type="submit">Към панела</button>
+             </form>
+        </div>
+    </div>
+
+
+    <div id="downloadOne" class="downloadOne">
+        <div class="box">
+            <h1>Свалете диазйн системата</h1>
+            <p>От тук можете да свалите диазйн системата за по-детаилен преглед.</p>
+            <form action="https://softwareuniversity-my.sharepoint.com/:u:/g/personal/irinaspasovaspasova_students_softuni_bg/Ec-rl-X_TDRIkxJ6TmbQH68BcMX4nkx3uHOW4UyVr4yBlw?e=PJhCcH" method="get" target="_blank">
+                <button class="btn btn-primary" type="submit">Към Google Drive</button>
+             </form>
+        </div>
+    </div>
+
+
+    <div id="downloadTwo" class="downloadTwo">
+        <div class="box">
+            <h1>Вижте кода на проекта</h1>
+            <p>Целият код на разработката може да бъде разгледан и свален от Github. </p>
+            <form action="https://github.com/IrinaUXUI" method="get" target="_blank">
+                <button class="btn btn-primary" type="submit">Kъм Github</button>
+             </form>
+        </div>
+    </div>
+
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    function openBtn(){
+        document.getElementById('leftMenu').style.width="250px";
+    }
+
+    function closeBtn(){
+        document.getElementById('leftMenu').style.width="0";
+    }
+</script>
+
+</body>
+</html>
+© 2022 GitHub, Inc.
+Terms
+Privacy
