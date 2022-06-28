@@ -96,7 +96,7 @@ html {
 }
 
 .box {
-    background: var(--bg-dark-secondary);
+   /* background: var(--bg-dark-secondary);*/
     padding: 2rem;
     width: 70vw;
     height: 40vh;
@@ -155,7 +155,7 @@ html {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.9);
     z-index: -1;
 }
 
